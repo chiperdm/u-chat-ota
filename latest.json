@@ -2,16 +2,14 @@
   "enabled": true,
   "product": "u-chat-android",
   "channel": "stable",
-  "version": "1.2.0",
-  "build": 4,
+  "version": "1.1.3",
+  "build": 3,
   "min_supported_build": 1,
   "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/U-Chat/uchat_v1.2.0_arm64.apk",
   "sha256": "03664597de8e83b205dc1cb166b68e6dd5bf7a272b25dd96bc71107cb1e89d1b",
   "release_notes": [
-    "Обновлён OTA Updates Engine.",
-    "Обновлён интерфейс чатов и панели ввода.",
-    "Добавлены новые возможности кастомизации и обоев.",
-    "Улучшены профиль, QR-коды и работа в офлайн-режиме."
+    "Исправлены ошибки.",
+    "Улучшена стабильность приложения."
   ],
   "published_at": "2026-10-03T07:39:00Z"
 }
