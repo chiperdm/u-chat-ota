@@ -1,0 +1,38 @@
+name: Validate OTA manifest
+
+on:
+  push:
+    paths:
+      - 'latest.json'
+      - 'channels/*.json'
+      - 'schema/latest.schema.json'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - 'latest.json'
+      - 'channels/*.json'
+      - 'schema/latest.schema.json'
+      - '.github/workflows/validate.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install validator
+        run: npm install --no-save ajv-cli ajv-formats
+
+      - name: Validate stable manifest
+        run: npx ajv validate -s schema/latest.schema.json -d latest.json --spec=draft2020 -c ajv-formats
+
+      - name: Validate channels
+        run: |
+          npx ajv validate -s schema/latest.schema.json -d channels/stable.json --spec=draft2020 -c ajv-formats
+          npx ajv validate -s schema/latest.schema.json -d channels/beta.json --spec=draft2020 -c ajv-formats

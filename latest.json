@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "product": "u-chat-android",
+  "channel": "stable",
+  "version": "1.0.0",
+  "build": 1,
+  "min_supported_build": 1,
+  "download_url": "",
+  "sha256": "",
+  "release_notes": [
+    "Initial OTA manifest."
+  ],
+  "published_at": "2026-10-03T00:00:00Z"
+}

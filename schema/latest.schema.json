@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/chiperdm/u-chat-ota/main/schema/latest.schema.json",
+  "title": "U-Chat OTA Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "enabled",
+    "product",
+    "channel",
+    "version",
+    "build",
+    "min_supported_build",
+    "download_url",
+    "sha256",
+    "release_notes",
+    "published_at"
+  ],
+  "properties": {
+    "enabled": { "type": "boolean" },
+    "product": { "type": "string", "minLength": 1 },
+    "channel": { "enum": ["stable", "beta"] },
+    "version": { "type": "string", "minLength": 1 },
+    "build": { "type": "integer", "minimum": 0 },
+    "min_supported_build": { "type": "integer", "minimum": 0 },
+    "download_url": {
+      "anyOf": [
+        { "const": "" },
+        {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        }
+      ]
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^$|^[A-Fa-f0-9]{64}$"
+    },
+    "release_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

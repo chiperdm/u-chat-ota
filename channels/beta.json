@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "product": "u-chat-android",
+  "channel": "beta",
+  "version": "0.0.0-beta.1",
+  "build": 0,
+  "min_supported_build": 1,
+  "download_url": "",
+  "sha256": "",
+  "release_notes": [],
+  "published_at": "2026-10-03T00:00:00Z"
+}
