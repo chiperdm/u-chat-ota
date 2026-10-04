@@ -6,7 +6,7 @@
   "build": 4,
   "min_supported_build": 1,
   "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/U-Chat/uchat_v1.2.0_arm64.apk",
-  "sha256": "ВСТАВЬ_SHA256_ИЗ_APK",
+  "sha256": "f897df455285ef265c834263b1b3aa417e0abf3edf8bb48cf58ab228fb6f7337",
   "release_notes": [
     "Добавлены юзернеймы и ссылки-приглашения.",
     "Добавлены реакции, ответы и пересылка сообщений.",
