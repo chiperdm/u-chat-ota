@@ -2,19 +2,14 @@
   "enabled": true,
   "product": "u-chat-android",
   "channel": "stable",
-  "version": "2.2.0",
-  "build": 11,
+  "version": "2.3.0",
+  "build": 12,
   "min_supported_build": 1,
-  "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/v2.2.0/UChat-v2.2.0.apk",
-  "sha256": "f1d22be077b602b1ec9fbe78324acc9222a9b4ec7d25f677d108dc3effb548cb",
+  "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/v2.3.0/UChat-v2.3.0.apk",
+  "sha256": "d08cf1bc9364eba0a7c64292c91eec22063ab0c6c3ef921e5840299683509b44",
   "release_notes": [
-    "3 режима отображения профиля: Компактный, Стандартный и Максимальный.",
-    "Полноразмерный просмотр аватаров и сохранение в галерею.",
-    "Альбомы фото и встроенный редактор изображений с рисованием.",
-    "Улучшенные кружки: быстрый разворот камеры двойным тапом и таймер до 60 секунд.",
-    "Автоматическое сворачивание нижней панели навигации при пролистывании.",
-    "Полностью обновленное создание групп и каналов.",
-    "Полноэкранная страница истории обновлений и AMOLED Black тема."
+    "Обновились анимации",
+    "Исправлены кружки"
   ],
-  "published_at": "2026-11-02T01:58:00Z"
+  "published_at": "2026-11-06T22:52:00Z"
 }
