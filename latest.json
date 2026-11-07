@@ -2,14 +2,17 @@
   "enabled": true,
   "product": "u-chat-android",
   "channel": "stable",
-  "version": "2.3.0",
-  "build": 12,
+  "version": "2.3.1",
+  "build": 13,
   "min_supported_build": 1,
-  "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/v2.3.0/UChat-v2.3.0.apk",
-  "sha256": "d08cf1bc9364eba0a7c64292c91eec22063ab0c6c3ef921e5840299683509b44",
+  "download_url": "https://github.com/chiperdm/u-chat-ota/releases/download/v2.3.1/UChat-v2.3.1.apk",
+  "sha256": "6a6e0f1622d13134a4225cb0f72d0003558e1623b336aac28963219c725fd2f1",
   "release_notes": [
-    "Обновились анимации",
-    "Исправлены кружки"
+    "Динамический заголовок с плавным изменением размера аватара",
+    "Кастомные обои для чатов через меню настроек чата",
+    "Надежное сохранение аватара при очистке памяти",
+    "Анимированная круговая диаграмма памяти",
+    "Улучшенные переходы и анимации"
   ],
-  "published_at": "2026-11-06T22:52:00Z"
+  "published_at": "2026-11-07T05:15:00Z"
 }
